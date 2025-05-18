@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  font-family: "Roboto Slab" !important;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto Slab" !important;
+}
+
+
+.custom-next {
+  right: 0.5% !important;
+}
+
+.custom-prev {
+  left: 0.5% !important;
+}
+
+.swiperSlide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.swiper-slide-next>div {
+  display: flex;
+  justify-content: center !important;
+}
+
+.winnerCard {
+  cursor: pointer;
+}
+
+.winnerContent:hover .detail {
+  color: #fff;
+
+}
+
+.winnerContent:hover {
+  color: #fff;
+}
+
+.winnerContent:hover .imgOverlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.winnerContent .quote {
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+
+.winnerContent:hover .quote {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.winnerContent:hover path {
+  fill: #0F6E9B;
+  transition: fill 0.3s ease-in-out;
+  color: #fff;
+}
+
+
+/* header stayling  */
+.headerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.examInMob {
+  display: none;
+}
+
+.OlympiadIntro-mob {
+  display: none;
+}
+
+.OlympiadIntro-desk {
+  display: block;
+}
+
+
+.SuperCAppSection {
+  .deskTitle {
+    display: block;
+  }
+
+  .mobileTitle {
+    display: none;
+  }
+
+}
+
+.testimonialContainer {
+  & .mobSwiper {
+    display: none;
+  }
+
+  & .deskSwiper {
+    display: block;
+  }
+}
+
+.prevWinnerContainer {
+  & .mobileSwiper {
+    display: none;
+  }
+
+  & .deskSwiper {
+    display: flex;
+  }
+}
+
+
+/* animations keyframes */
+
+@keyframes AlertBlink {
+
+  0% {
+    color: #fff
+  }
+
+  50% {
+    color: #14516E
+  }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end !important;
+    margin-bottom: 12px;
+  }
+
+  .headerContainer button {
+    font-size: 10px;
+  }
+
+  .headerContainer .btnContainer {
+    gap: 0 !important
+  }
+
+  .logoContainer {
+    justify-content: space-between !important;
+    width: 96% !important;
+  }
+
+  .superClogo {
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0px 10px 10px !important;
+    left: 1px;
+    top: -12px !important
+  }
+
+  .examInDesktop {
+    display: none;
+  }
+
+  .examInMob {
+    display: block;
+    font-size: 16px !important;
+    margin-bottom: 16px;
+
+    & span {
+      color: #fff;
+    }
+
+    & strong {
+      animation: AlertBlink 1s infinite ease-in-out;
+    }
+
+  }
+
+  .examInMob {
+    display: block;
+    font-size: 16px !important;
+    text-align: center;
+
+    & img {
+      width: 20%;
+    }
+  }
+
+
+
+  /* banner container  */
+
+  .bannerContainer {
+    max-height: 320px !important;
+    min-height: 180px !important;
+
+    & h1 {
+      font-size: 16px;
+    }
+
+    &>div {
+      align-items: start !important;
+    }
+
+
+    button {
+      font-size: 12px;
+    }
+
+    .bannerDayLeftContainer {
+      & div {
+        width: 90px !important;
+        top: 56% !important;
+        height: 50px !important;
+        gap: 5px !important;
+        padding-left: 8px !important;
+      }
+
+      & img {
+        width: 20px !important;
+      }
+
+      & p {
+        font-size: 8px !important;
+        margin: 0 !important;
+      }
+
+      & strong {
+        font-size: 14px !important;
+      }
+    }
+
+  }
+
+
+  /* olympidcontainer */
+
+  .olympidcontainer {
+    .olympid {
+      width: 100% !important;
+      flex-direction: column !important;
+
+      & h5 {
+        font-size: 18px !important;
+      }
+
+      & p {
+        font-size: 18px !important;
+      }
+
+      & button {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  /* OlympiadIntro */
+  .OlympiadIntro-mob {
+    display: block;
+  }
+
+  .OlympiadIntro-desk {
+    display: none;
+  }
+
+  /* challenge */
+  .challengeContainer {
+    & .challengeFirstRow {
+      width: 100% !important;
+      margin-bottom: 62px !important;
+
+      & .v-play {
+        bottom: 0 !important;
+
+        & img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+
+        & p {
+          font-size: 14px;
+        }
+      }
+
+      & .steps {
+        font-size: 24px !important;
+      }
+    }
+
+    & .challengeSecRow {
+      bottom: -4% !important;
+      width: 94% !important;
+      flex-wrap: nowrap;
+      left: 6% !important;
+      overflow-x: scroll;
+
+      & img {
+        width: 24px !important;
+      }
+
+      & .shadow-sm {
+        height: 100% !important;
+      }
+
+      & .card-title {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      &>div {
+        width: fit-content;
+      }
+
+      & .challengeCard {
+        gap: 10px;
+        padding: 10px !important;
+      }
+
+    }
+  }
+
+
+  /* AboutOlympiad */
+
+  .AboutOlympiadContainer {
+    margin-top: 100px !important;
+
+    & .AboutOlympiadTitle {
+      font-size: 24px !important;
+    }
+
+    & .description {
+      font-size: 14px !important;
+    }
+
+    & .contentList {
+      font-size: 16px !important;
+    }
+
+    & .mobileImg {
+      max-width: 100% !important;
+    }
+
+  }
+
+  /* SuperCAppSection */
+
+  .SuperCAppSection {
+    margin-top: 40px !important;
+
+    & .deskTitle {
+      display: none;
+    }
+
+    & .mobileTitle {
+      display: block;
+      font-size: 24px !important;
+      font-weight: 400;
+    }
+
+    & .SuperCAppSectionRow {
+      width: 100% !important;
+    }
+
+    & .m-Img {
+      max-width: 100% !important;
+      margin-top: 20px;
+    }
+
+    & button {
+      width: 124px !important;
+      font-size: 12px !important;
+      margin-left: 44px !important;
+    }
+
+    & ul {
+      padding-left: 10px !important;
+      font-size: 16px !important;
+    }
+
+    & .mobileImg,
+    .globImg {
+      width: 34px !important;
+    }
+
+    & .ul-img {
+      flex-direction: column !important;
+    }
+  }
+
+  /* prevWinnerContainer */
+
+  .prevWinnerContainer {
+    & h2 {
+      font-size: 24px !important;
+      font-weight: 400;
+    }
+
+
+
+    & .mobileSwiper {
+      display: block;
+      padding: 0% !important;
+    }
+
+    & .deskSwiper {
+      display: none;
+    }
+
+
+    & .winnerContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .tagContainer {
+        bottom: 4% !important;
+      }
+
+      & .quote {
+        font-size: 14px !important;
+      }
+
+      & svg {
+
+        width: 180px !important;
+        max-width: 100% !important;
+      }
+
+      & .detail {
+        font-size: 13px !important;
+      }
+
+      &>div {
+        width: 80% !important;
+      }
+    }
+
+  }
+
+
+
+  /* Trusted */
+
+  .trustedContainer {
+    height: fit-content !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 100px !important;
+
+    & div {
+      background-color: #E4F4FC;
+    }
+
+    & .row2 {
+      padding-bottom: 48px !important;
+    }
+  }
+
+  /* Testimonial */
+
+  .testimonialContainer {
+    & h3 {
+      font-size: 24px !important;
+    }
+
+    &>div {
+      margin-top: 24px !important;
+    }
+
+    & .mobSwiper {
+      display: block;
+    }
+
+    & .deskSwiper {
+      display: none;
+    }
+  }
+
+  .TestimonialCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px !important;
+    width: 83% !important;
+
+    & .stu-img {
+      width: 100% !important;
+    }
+
+    & .cardContent {
+      width: 100% !important;
+      margin-top: 0px !important;
+
+      &>p {
+        text-align: right;
+        font-size: 12px !important;
+      }
+
+      & div {
+        display: flex;
+        gap: 10px;
+
+        & p {
+          font-size: 16px !important;
+        }
+
+        & img {
+          width: 40px !important;
+        }
+      }
+    }
+  }
+
+
+  .custom-next {
+    right: 0.5% !important;
+  }
+
+  .custom-prev {
+    left: 0.5% !important;
+  }
+
+  /* faqContainer */
+
+  .faqContainer {
+    & h2{
+      font-size: 24px !important;
+    }
+    & .faqRow {
+      margin-inline: 5px;
+    }
+
+    & img {
+      width: 28px !important;
+    }
+  }
+
+  /* DontMissOpp */
+
+  .DontMissOpp {
+    & h4 {
+      font-size: 24px !important;
+    }
+
+    & p {
+      font-size: 18px !important;
+    }
+  }
+
+  /* CallToActionButtons */
+
+  .CallToActionButtons {
+    & button {
+      font-size: 14px !important;
+    }
+  }
+
+  /* SyllabusOverview */
+  .SyllabusOverview {
+    margin-top: 100px !important;
+
+    & h2 {
+      font-size: 24px !important;
+    }
+
+    & th {
+      font-size: 16px !important;
+    }
+
+    & .bodyRow {
+      td:nth-child(1) {
+        font-size: 14px !important;
+      }
+
+      td:nth-child(2) {
+        font-size: 12px !important;
+      }
+
+      td:nth-child(3) {
+        & img {
+          width: 40px !important;
+        }
+
+        & .arth-card {
+          justify-content: space-between !important;
+          gap: 10px !important;
+          text-align: right;
+        }
+
+        & .syllabusRow {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+
+  /* AppDownload */
+
+  .AppDownload{
+    & h3{
+      font-size: 24px !important;
+    }
+  }
+
+
+}
