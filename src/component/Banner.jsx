@@ -25,7 +25,8 @@ const Banner = () => {
             </div>
 
             {/* Hero Section */}
-            <div className="bannerContainer position-relative text-white d-flex align-items-center mt-2 my-lg-0" style={{ backgroundImage: `url(./homebanner.png)`, backgroundSize: 'cover', backgroundPosition: 'left center', minHeight: '500px' }}>
+            <div className='mobileBanner'>
+            <div className="mobileBanner bannerContainer position-relative text-white d-flex align-items-center mt-2 my-lg-0" style={{ backgroundImage: `url(./bannerImg2.png)`, backgroundSize: 'cover', backgroundPosition: 'left center', minHeight: '500px' }}>
                 <div className="container d-flex  flex-md-row align-items-center justify-content-start h-100 py-md-5" style={{gap :"10%"}}>
                     <div className="col-md-6">
                         <h1 className=" display-5 mb-3 text-white" style={{fontWeight : 400 ,textShadow :"2px 0px gray"}}>
@@ -42,6 +43,28 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
+             
+             <div className='desktopbanner'>
+            <div className="desktopbanner bannerContainer position-relative text-white d-flex align-items-center mt-2 my-lg-0" style={{ backgroundImage: `url(./homebanner.png)`, backgroundSize: 'cover', backgroundPosition: 'left center', minHeight: '500px' }}>
+                <div className="container d-flex  flex-md-row align-items-center justify-content-start h-100 py-md-5" style={{gap :"10%"}}>
+                    <div className="col-md-6">
+                        <h1 className=" display-5 mb-3 text-white" style={{fontWeight : 400 ,textShadow :"2px 0px gray"}}>
+                            Your Child Could Be <br />
+                            India’s Next Maths Star <br />
+                            With a Free Trip to London!
+                        </h1>
+                        <button type='btn' style={{background :"#14516E", color : "#fff" , borderRadius :  "0px"}} className="btn">Enroll Now</button>
+                    </div>
+                    <div className=" text-center bannerDayLeftContainer">
+                        <div className="p-3  mt-3 fw-bold gap-3 d-flex align-items-center justify-align-content-around " style={{ position :"absolute", bottom :"10%",backgroundImage : 'url(./bannerTag.svg)' ,backgroundRepeat : "no-repeat" ,backgroundSize :"contain" ,width :"230px" ,height : "110px"}}>
+                           <img src={"./time.svg"} style={{width :"45px"}}/> 
+                           <p style={{marginBottom :16}}> <strong style={{fontSize :"32px" }}> 78 </strong> <br/> Days Left! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
             {/* Info Bar */}
