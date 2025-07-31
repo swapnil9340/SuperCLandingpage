@@ -95,6 +95,7 @@ const RegistrationForm = () => {
       {open && (
         <div
           style={{
+                  
             position: 'fixed',
             bottom: 0,
             left: 0,
@@ -102,11 +103,11 @@ const RegistrationForm = () => {
             background: '#fff',
             borderTopLeftRadius: '16px',
             borderTopRightRadius: '16px',
-            maxHeight: '95vh',
+            maxHeight: '100vh',
             overflowY: 'auto',
             padding: '30px',
             zIndex: 1000,
-            animation: 'slideUp 0.3s ease',
+        
           }}
         >
           <div style={{ textAlign: 'right' }}>
@@ -114,6 +115,7 @@ const RegistrationForm = () => {
               onClick={() => setOpen(false)}
               style={{
                 fontSize: '24px',
+         
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
@@ -243,7 +245,7 @@ const RegistrationForm = () => {
                 style={{
                   marginTop: '20px',
                   padding: '12px',
-                  background: 'linear-gradient(to right, #fc466b, #3f5efb)',
+                  background: 'linear-gradient(to right, rgba(251, 93, 0, 1), rgba(188, 57, 150, 1))',
                   color: '#fff',
                   fontWeight: '600',
                   borderRadius: '8px',
@@ -258,13 +260,7 @@ const RegistrationForm = () => {
         </div>
       )}
 
-      {/* Slide animation */}
-      <style>{`
-        @keyframes slideUp {
-          from { transform: translateY(100%); }
-          to { transform: translateY(0); }
-        }
-      `}</style>
+    
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import RegistrationForm from '../common-component/model/Model';
 
 const Challenge = () => {
   return (
@@ -29,7 +30,7 @@ const Challenge = () => {
             <li>Take the exam from home on 21 September 2025</li>
             <li>Top scorer wins a London Trip for student + parents</li>
           </ol>
-          <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", border: "none" }} >Enroll Now For Free</Button>
+        <RegistrationForm></RegistrationForm>
         </Col>
       </Row>
 
