@@ -47,7 +47,7 @@ const RegistrationForm = ({
         return;
       }
     }
-    
+
 
     console.log({ ...formData, triggerLabel });
     setFormSubmitted(true);
@@ -132,6 +132,11 @@ const RegistrationForm = ({
                   src="/Thankyou.jpg"
                   alt="Thank You"
                   style={{ maxWidth: '300px', margin: '20px auto' }}
+                  onLoad={() => {
+                    if (window.fbq) {
+                      fbq('trackCustom', 'ThankYouImageViewed');
+                    }
+                  }}
                 />
                 <h3 style={{ marginTop: '20px' }}>Thank you for registering!</h3>
                 <p>We'll be in touch soon with more details.</p>
@@ -175,10 +180,10 @@ const RegistrationForm = ({
 
                 <input type="text" name="parentName" placeholder="Parent's Name *" value={formData.parentName} onChange={handleChange} />
                 <input type="tel" name="mobile" placeholder="Mobile Number *" value={formData.mobile} onChange={handleChange} />
-              
-            
 
-                
+
+
+
 
                 <input type="email" name="email" placeholder="Email Address *" value={formData.email} onChange={handleChange} />
 
