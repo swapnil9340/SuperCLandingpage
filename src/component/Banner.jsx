@@ -3,6 +3,7 @@ import RegistrationForm from '../common-component/model/Model'
 
 
 const Banner = () => {
+
     return (
         <div className="superc-olympiad">
             {/* Top Bar */}
@@ -19,7 +20,7 @@ const Banner = () => {
                             <img src='/Arrow.svg' style={{ marginRight: "16px" }} /> Exam in <strong>78 Days!</strong>
                         </div>
                         <div style={{ gap: "24px" }} className='d-flex btnContainer'>
-                          <RegistrationForm></RegistrationForm>
+                            <RegistrationForm triggerLabel="Enroll Now For Free" />
                         </div>
                     </div>
                 </div>
@@ -35,7 +36,7 @@ const Banner = () => {
                                 India’s Next Maths Star <br />
                                 With a Free Trip to London!
                             </h1>
-                           <RegistrationForm></RegistrationForm>
+                            <RegistrationForm triggerLabel="Enroll Now For Free" />
                         </div>
                         <div className=" text-center bannerDayLeftContainer">
                             <div className="p-3  mt-3 fw-bold gap-3 d-flex align-items-center justify-align-content-around " style={{ position: "absolute", bottom: "10%", backgroundImage: 'url(./bannerTag.svg)', backgroundRepeat: "no-repeat", backgroundSize: "contain", width: "230px", height: "110px" }}>
@@ -56,7 +57,8 @@ const Banner = () => {
                                 India’s Next Maths Star <br />
                                 With a Free Trip to London!
                             </h1>
-                           <RegistrationForm></RegistrationForm>
+                         <RegistrationForm triggerLabel="Enroll Now For Free" />
+
                         </div>
                         <div className=" text-center bannerDayLeftContainer">
                             <div className="p-3  mt-3 fw-bold gap-3 d-flex align-items-center justify-align-content-around " style={{ position: "absolute", bottom: "10%", backgroundImage: 'url(./bannerTag.svg)', backgroundRepeat: "no-repeat", backgroundSize: "contain", width: "230px", height: "110px" }}>
@@ -84,6 +86,7 @@ const Banner = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
