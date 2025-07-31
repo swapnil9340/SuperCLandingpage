@@ -7,7 +7,7 @@ const CallToActionButtons = () => {
       <Row className="justify-content-center">
         <Col xs="auto">
           <Button type='btn'  className="px-4" style={{ background: "#0F6E9B", color: "#fff", borderRadius: "0px", border: "none", fontSize: "24px" }}>
-            Download App
+            Enroll Now For Free
           </Button>
         </Col>
         <Col xs="auto">
