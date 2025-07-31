@@ -16,6 +16,7 @@ import RegistrationForm from '../../common-component/model/Model.jsx'
 
 
 
+
 const LandingPage = () => {
   return (
     <>
@@ -32,7 +33,7 @@ const LandingPage = () => {
       <FAQ />
       <DontMissOpp />
       <CallToActionButtons />
-     
+
     </>
   )
 }

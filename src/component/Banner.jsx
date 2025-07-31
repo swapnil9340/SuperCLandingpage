@@ -1,4 +1,5 @@
 import React from 'react'
+import RegistrationForm from '../common-component/model/Model'
 
 
 const Banner = () => {
@@ -18,9 +19,7 @@ const Banner = () => {
                             <img src='/Arrow.svg' style={{ marginRight: "16px" }} /> Exam in <strong>78 Days!</strong>
                         </div>
                         <div style={{ gap: "24px" }} className='d-flex btnContainer'>
-
-                            <button  type='btn' className="btn  me-2" style={{ background: "#1779A8", color: "#fff", borderRadius: "0px" }}> <img src='/R-now.svg' style={{ marginRight: "8px" }} /> Enroll Now For Free</button>
-                            <button type='btn' className="btn " style={{ border: "2px solid #1779A8", color: "#1779A8", borderRadius: "0px" }}> <img src='/icons.svg' style={{ marginRight: "8px" }} /> Download App</button>
+                          <RegistrationForm></RegistrationForm>
                         </div>
                     </div>
                 </div>
@@ -36,7 +35,7 @@ const Banner = () => {
                                 India’s Next Maths Star <br />
                                 With a Free Trip to London!
                             </h1>
-                            <button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px" }} className="btn">Enroll Now</button>
+                           <RegistrationForm></RegistrationForm>
                         </div>
                         <div className=" text-center bannerDayLeftContainer">
                             <div className="p-3  mt-3 fw-bold gap-3 d-flex align-items-center justify-align-content-around " style={{ position: "absolute", bottom: "10%", backgroundImage: 'url(./bannerTag.svg)', backgroundRepeat: "no-repeat", backgroundSize: "contain", width: "230px", height: "110px" }}>
@@ -57,7 +56,7 @@ const Banner = () => {
                                 India’s Next Maths Star <br />
                                 With a Free Trip to London!
                             </h1>
-                            <button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px" }} className="btn">Enroll Now For Free</button>
+                           <RegistrationForm></RegistrationForm>
                         </div>
                         <div className=" text-center bannerDayLeftContainer">
                             <div className="p-3  mt-3 fw-bold gap-3 d-flex align-items-center justify-align-content-around " style={{ position: "absolute", bottom: "10%", backgroundImage: 'url(./bannerTag.svg)', backgroundRepeat: "no-repeat", backgroundSize: "contain", width: "230px", height: "110px" }}>
@@ -81,7 +80,7 @@ const Banner = () => {
                         </p>
 
                     </div>
-                    <button type='btn' className="btn btn-primary" style={{ background: "#14516E", color: "#fff", borderRadius: "0px", border: "none" }}>Download SuperC App for Daily Prep</button>
+
                 </div>
             </div>
         </div>
