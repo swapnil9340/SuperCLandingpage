@@ -42,9 +42,13 @@ const SuperCAppSection = () => {
                   </ul>
                 </div>
                 <div className='position-relative ' >
+                  
+                   {/*<RegistrationForm triggerLabel=" Register for 199" />*/}
+                          
+
                   <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px", border: "none", }} className=" mt-2">Register for 99</Button>
 
-                  <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px", border: "none" }} className=" mt-2">Register for 199</Button>
+                 
                 </div>
               </div>
 

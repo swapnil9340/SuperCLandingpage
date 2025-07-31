@@ -20,22 +20,25 @@ import RegistrationForm from '../../common-component/model/Model.jsx'
 const LandingPage = () => {
   return (
     <>
+  
+
       <Banner />
       <OlympiadIntro />
       <Challenge />
       <AboutOlympiad />
-   
-      <SuperCAppSection />
+
     
+
       <PreviousWinners />
       <Trusted />
       <Testimonial />
       <FAQ />
       <DontMissOpp />
       <CallToActionButtons />
+       
 
     </>
   )
 }
 
-export default LandingPage
+export default LandingPage;
