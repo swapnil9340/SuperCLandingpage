@@ -30,7 +30,9 @@ const Challenge = () => {
             <li>Take the exam from home on 21 September 2025</li>
             <li>Top scorer wins a London Trip for student + parents</li>
           </ol>
-        <RegistrationForm></RegistrationForm>
+      <RegistrationForm triggerLabel="Enroll Now For Free" />
+       <RegistrationForm triggerLabel="Mock Test for 99" /> 
+          <RegistrationForm triggerLabel="Mock Plans + Unlimited Questions for 199" />
         </Col>
       </Row>
 
