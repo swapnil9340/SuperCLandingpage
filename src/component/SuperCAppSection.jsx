@@ -8,7 +8,7 @@ const SuperCAppSection = () => {
         {/* Left: Mobile App Images */}
         <Col md={5} className="text-center mb-4 mb-md-0">
           <h3 className='mobileTitle'>
-            Get Olympiad-Ready with  <span style={{ color:"#1779A8" }}>SuperC App & Web!</span>
+            Get Olympiad-Ready with  <span style={{ color: "#1779A8" }}>SuperC App & Web!</span>
           </h3>
 
           <img
@@ -21,34 +21,37 @@ const SuperCAppSection = () => {
 
         {/* Right: Text Content */}
         <Col md={5} className="px-4">
-          <h3 className='deskTitle' style={{fontSize : "32px" ,fontWeight : 400}}>
-            Get Olympiad-Ready with <br /> <span style={{ color:"#1779A8"}}>SuperC App & Web!</span>
+          <h3 className='deskTitle' style={{ fontSize: "32px", fontWeight: 400 }}>
+            Get Olympiad-Ready with <br /> <span style={{ color: "#1779A8" }}>SuperC App & Web!</span>
           </h3>
 
           <div className='d-flex flex-column gap-4'>
             <div className="mt-md-4">
-              <h5 className="mb-2" style={{fontWeight : 400}}>SuperC App:</h5>
+              <h5 className="mb-2" style={{ fontWeight: 400 }}>SuperC App:</h5>
               <div className='ul-img d-flex justify-content-between'>
                 <div className=' d-flex'>
                   <img className='mobileImg' src="/app1.svg" />
                   <ul style={{ marginBottom: 0, flex: 1 }}>
                     <li className="mb-2 d-flex align-items-start">
-                      <span>Daily quizzes & practice questions</span>
+                      <span>  1 Full Mock Test Practice</span>
                     </li>
                     <li className="d-flex align-items-start">
-                      <span>Leaderboards to stay competitive</span>
+                      <span>2. Everything from the Mock Plan, plus
+                        Unlimited Practice Questions & Tests</span>
                     </li>
                   </ul>
                 </div>
-                <div className='position-relative '>
-                <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px" ,border :"none" }} className=" mt-2">Download App</Button>
-              </div>
+                <div className='position-relative ' >
+                  <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px", border: "none", }} className=" mt-2">Register for 99</Button>
+
+                  <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px", border: "none" }} className=" mt-2">Register for 199</Button>
+                </div>
               </div>
 
             </div>
 
             <div className="mt-md-4">
-              <h5 className="mb-2" style={{fontWeight : 400}}>Website:</h5>
+              <h5 className="mb-2" style={{ fontWeight: 400 }}>Website:</h5>
               <div className='ul-img d-flex justify-content-between'>
                 <div className='d-flex'>
                   <img className='globImg' src="/app3.svg" />
@@ -64,7 +67,7 @@ const SuperCAppSection = () => {
                 </div>
                 <div className='position-relative '>
                   <img src="/app2.svg" className='d-none d-lg-block' style={{ position: "absolute", bottom: "84%", left: "-20%" }} />
-                  <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px" ,border :"none" }} className="mt-2">Visit Now</Button>
+                  <Button type='btn' style={{ background: "#14516E", color: "#fff", borderRadius: "0px", alignSelf: "center", width: "150px", border: "none" }} className="mt-2">Visit Now</Button>
                 </div>
               </div>
             </div>

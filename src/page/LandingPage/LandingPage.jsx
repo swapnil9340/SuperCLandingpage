@@ -12,6 +12,8 @@ import FAQ from '../../component/FAQ.jsx'
 import Testimonial from '../../component/Testimonial.jsx'
 import PreviousWinners from '../../component/PrviousWinner.jsx'
 import SyllabusOverview from '../../component/SyllabusOverview.jsx'
+import RegistrationForm from '../../common-component/model/Model.jsx'
+
 
 
 const LandingPage = () => {
@@ -21,15 +23,16 @@ const LandingPage = () => {
       <OlympiadIntro />
       <Challenge />
       <AboutOlympiad />
-      <SyllabusOverview />
+   
       <SuperCAppSection />
-       <AppDownload />
+    
       <PreviousWinners />
       <Trusted />
       <Testimonial />
       <FAQ />
       <DontMissOpp />
       <CallToActionButtons />
+     
     </>
   )
 }
